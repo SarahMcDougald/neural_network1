@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0525418-7146-4fc4-8e5a-1382dbe4587b" name="Default" comment="" />
+    <list default="true" id="c0525418-7146-4fc4-8e5a-1382dbe4587b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/somename/Neural_Node.java" afterPath="$PROJECT_DIR$/src/com/somename/Neural_Node.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,14 +21,14 @@
       <file leaf-file-name="Neural_Node.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/somename/Neural_Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="27" />
+            <state relative-caret-position="373">
+              <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#322#335#0" expanded="true" />
                 <element signature="e#530#538#0" expanded="true" />
-                <element signature="e#1731#1732#0" expanded="true" />
-                <element signature="e#1760#1761#0" expanded="true" />
+                <element signature="e#1744#1745#0" expanded="true" />
+                <element signature="e#1773#1774#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -415,14 +417,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/somename/Neural_Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="27" />
+        <state relative-caret-position="373">
+          <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#322#335#0" expanded="true" />
             <element signature="e#530#538#0" expanded="true" />
-            <element signature="e#1731#1732#0" expanded="true" />
-            <element signature="e#1760#1761#0" expanded="true" />
+            <element signature="e#1744#1745#0" expanded="true" />
+            <element signature="e#1773#1774#0" expanded="true" />
           </folding>
         </state>
       </provider>
