@@ -32,7 +32,7 @@ public class Neural_Node
     //  4. output
     public double output;
 
-    
+
 
 
     /*
