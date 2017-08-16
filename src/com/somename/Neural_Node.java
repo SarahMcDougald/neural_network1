@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.*;
 
+import java.lang.Math;
+
 /**
  * Created by Sarah on 8/12/2017.
  *
@@ -18,7 +20,7 @@ public class Neural_Node
 
     //  2. weights
     //ARRAYLIST of doubles. A little different. https://stackoverflow.com/questions/17481206/java-arraylist-of-doubles
-    public ArrayList<Double> weights = new ArrayList<Double>();
+    public ArrayList<Double> weights; // = new ArrayList<Double>();
     //List<Double> list = new ArrayList<>(Arrays.asList(1.38, 2.56, 4.3));
 
 
@@ -26,7 +28,7 @@ public class Neural_Node
     //  3. activation function
     ///Make another class with the activaton function? Specify that this neural node has that activation function.
     ///(DECIDE ON STRUCTURE)
-    public ActivationFunction_Listing myFunction = new ActivationFunction_Listing();
+    public ActivationFunction_Listing myFunction;
 
 
     //  4. output
@@ -42,14 +44,23 @@ public class Neural_Node
 
     /**
      * Constructor for a neural node.
-     * Need to specify its inputs (arraylist), weights (arraylist? ? of doubles), AND activation function (???)
+     * Need to specify its inputs (arraylist), weights (arraylist? ? of doubles), AND activation function (???), and output.
      *
      * /// Wait..... you shouldn't have to specify the output.
+     * /// Wait.... weights should be set randomly, not specified.
+     *
      */
-    public Neural_Node(ArrayList<Neural_Node> inputList, List<Double> weights)
+    public Neural_Node(ArrayList<Neural_Node> inputList)
     {
         //Output is always 0 to start.
         output = 0;
+
+        //Make an interface for using activation function.
+        myFunction = new ActivationFunction_Listing();
+
+        //Make an arraylist of weights.
+        // -- weights between -1 and 1? -10 and 10?
+
 
 
 
