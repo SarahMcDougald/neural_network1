@@ -70,11 +70,62 @@ public class Network
      * This function will connect list all of the inputLayer nodes as inputs of each hiddenLayer node,
      * and all of the hiddenLayer nodes as inputs of each outputLayer node.
      *
-     * GOAL: structure this function so that it works with ANY number of input nodes, ANY number of output nodes!,
+     * FINAL GOAL: structure this function so that it works with ANY number of input nodes, ANY number of output nodes!,
      * and ANY number of hidden layers.
+     * -- use totalLayers and numHiddenLayers.
+     *
+     *
+     * This will be "version 1" in which there is assumed to be *ONE* hidden layer.
+     *
      */
     public void connect()
     {
+        // First, connect between input layer and hidden layer 1.
+
+        /*
+        By 'connect', we mean put every neural node on the inputLayer list on the "inputs" list of each Neural_Node in
+        Hidden Layer 1.
+
+        And so forth, for the other cases.
+        */
+        // !!! PROBLEM: setting equal '=' with arraylists uses a reference. Is that fine? Or should we "rebuild" the arraylists
+        // and their elements...?
+        // Maybe set equal for the time being. CONSIDER. __________________________________
+        for (int i = 0; i < totalLayers; i++)
+        {
+            if (i == 0)
+            {
+                //If we're on the first connection-layer, i.e. between input and hidden layer 1, then connect those.
+
+
+            }
+
+            else if (i == totalLayers - 1)
+            {
+                //If we're on the LAST connection-layer, i.e. between hidden layer n and output, then connect those.
+            }
+
+            else
+            {
+                /*
+                OTHERWISE:
+
+                if we're not on a connection-layer involving either the input or the output, then we must be
+                connecting two hidden layers.
+
+                Therefore, use their current ordering in the Arraylist<NN_Layer> called hiddenLayers.
+                Use 'i' to reference.
+                */
+
+
+            }
+
+
+        }
+
+
+        // After the for loop finishes... anything else? (double-check)
+
 
 
     }
