@@ -133,7 +133,7 @@ public class Network
         // !!! PROBLEM: setting equal '=' with arraylists uses a reference. Is that fine? Or should we "rebuild" the arraylists
         // and their elements...?
         // Maybe set equal for the time being. CONSIDER. __________________________________
-        for (int i = 0; i < totalLayers; i++)
+        for (int i = 0; i < totalLayers - 1; i++)
         {
             if (i == 0)
             {
@@ -143,32 +143,38 @@ public class Network
                 {
                     // Add each inputlayer node to the "inputs" list of each hiddenlayers node. I.e. nested loop.
 
-                    for (int jj = 0; jj < inputLayer.myNodes.size(); jj++)
-                    {
-                        /**
-                         * This syntax is horrible.
-                         *
-                         * Maybe make some accessor methods...
-                         */
+                    for (int jj = 0; jj < inputLayer.myNodes.size(); jj++) {
+                        // Fetch an input node.
+                        Neural_Node newNode = inputLayer.myNodes.get(jj);
 
-                        hiddenLayers.get(0).myNodes.get(j).inputs.add(inputLayer.myNodes.get(jj));
+                        // List this node as an 'input' of this hiddenLayer node.
+                        hiddenLayers.get(0).myNodes.get(j).addInputNode(newNode);
 
-                        //hiddenLayers.get(0).myNodes.get(j).a
+
+                        //Now do this until you've gone through all the input nodes.
+
+                        //longer version: hiddenLayers.get(0).myNodes.get(j).inputs.add(inputLayer.myNodes.get(jj));
 
                     }
-
+                    //Then, move on to the next node in the first hidden layer, and repeat.
                 }
-
-
             }
-
-            else if (i == totalLayers - 1)
+            else if (i == totalLayers - 2) /** changed 1 to 2. */
             {
                 //If we're on the LAST connection-layer, i.e. between hidden layer n and output, then connect those.
-            }
 
+                for (int k = 0; k < outputLayer.myNodes.size(); k++)
+                {
+                    for (int kk = 0; kk < hiddenLayers.get(kk).myNodes.size(); kk++)
+                    {
+                        Neural_Node newNode = hiddenLayers.get(totalLayers - 1).myNodes.get(kk);
+                        outputLayer.myNodes.get(k).addInputNode(newNode);
+                    }
+                }
+            }
             else
             {
+                System.out.println("Third connect condition hit. Connecting between two different hidden layers.");
                 /*
                 OTHERWISE:
 
@@ -179,11 +185,30 @@ public class Network
                 Use 'i' to reference.
                 */
 
+                for (int m = 0; m < hiddenLayers.get(i).myNodes.size(); m++)
+                {
+                    for (int mm = 0; mm < hiddenLayers.get(i - 1).myNodes.size(); mm++)
+                    {
+                        Neural_Node newNode = hiddenLayers.get(i - 1).myNodes.get(mm);
+                        hiddenLayers.get(i).myNodes.get(m).addInputNode(newNode);
+                    }
+
+                }
+
+
 
             }
 
 
         }
+
+        /**
+         * DOUBLE CHECK LOGIC.
+         *
+         * - Checked for 3 layers. Should never hit 3rd condition.
+         *
+         * Trace through, with 4 layers (2 hidden). Make sure.
+         */
 
 
         // After the for loop finishes... anything else? (double-check)

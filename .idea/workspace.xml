@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0525418-7146-4fc4-8e5a-1382dbe4587b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/somename/NN_Layer.java" afterPath="$PROJECT_DIR$/src/com/somename/NN_Layer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/somename/Network.java" afterPath="$PROJECT_DIR$/src/com/somename/Network.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/somename/Neural_Node.java" afterPath="$PROJECT_DIR$/src/com/somename/Neural_Node.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +21,7 @@
       <file leaf-file-name="Neural_Node.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/somename/Neural_Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
+            <state relative-caret-position="786">
               <caret line="85" column="23" lean-forward="false" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -47,8 +45,8 @@
       <file leaf-file-name="Network.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/somename/Network.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="155" column="26" lean-forward="false" selection-start-line="155" selection-start-column="26" selection-end-line="155" selection-end-column="26" />
+            <state relative-caret-position="1491">
+              <caret line="176" column="115" lean-forward="false" selection-start-line="176" selection-start-column="115" selection-end-line="176" selection-end-column="115" />
               <folding />
             </state>
           </provider>
@@ -75,9 +73,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/somename/ActivationFunction_Listing.java" />
-        <option value="$PROJECT_DIR$/src/com/somename/Network.java" />
         <option value="$PROJECT_DIR$/src/com/somename/Neural_Node.java" />
         <option value="$PROJECT_DIR$/src/com/somename/NN_Layer.java" />
+        <option value="$PROJECT_DIR$/src/com/somename/Network.java" />
       </list>
     </option>
   </component>
@@ -556,9 +554,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/somename/NN_Layer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/somename/Neural_Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
+        <state relative-caret-position="786">
           <caret line="85" column="23" lean-forward="false" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -568,18 +574,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/somename/NN_Layer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/somename/Network.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="155" column="26" lean-forward="false" selection-start-line="155" selection-start-column="26" selection-end-line="155" selection-end-column="26" />
+        <state relative-caret-position="1491">
+          <caret line="176" column="115" lean-forward="false" selection-start-line="176" selection-start-column="115" selection-end-line="176" selection-end-column="115" />
           <folding />
         </state>
       </provider>
