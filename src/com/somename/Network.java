@@ -119,6 +119,9 @@ public class Network
      */
     public void connectOneHidden()
     {
+        // thought: maybe use ints instead of directly referencing arraylist.size() for the for-loops...?
+
+
         // First, connect between input layer and hidden layer 1.
 
         /*
@@ -138,6 +141,18 @@ public class Network
 
                 for (int j = 0; j < hiddenLayers.get(i).myNodes.size(); j++ )
                 {
+                    // Add each inputlayer node to the "inputs" list of each hiddenlayers node. I.e. nested loop.
+
+                    for (int jj = 0; jj < inputLayer.myNodes.size(); jj++)
+                    {
+                        /**
+                         * This syntax is horrible.
+                         *
+                         * Maybe make some accessor methods...
+                         */
+
+                        hiddenLayers.get(0).myNodes.get(j).inputs.add(inputLayer.myNodes.get(jj));
+                    }
 
                 }
 
