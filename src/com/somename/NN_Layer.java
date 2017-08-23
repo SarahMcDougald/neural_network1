@@ -19,13 +19,14 @@ public class NN_Layer
             myNodes.add(i, new Neural_Node(null));
 
             /**
-             *  FIX THIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+             *  This is actually fine for now. The inputs list is set when the Network constructor is called.
              *
              */
 
         }
 
     }
+
 
 
 }

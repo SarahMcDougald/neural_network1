@@ -75,6 +75,19 @@ public class Neural_Node
     }
 
 
+
+    /**
+     * Adds a Neural_Node to the list of inputs for this NN_Layer. Adds to the END of the input list. (Shouldn't matter..)
+     *
+     * @param nn the neural node to be added to this NN_Layer.
+     */
+    public void addInputNode(Neural_Node nn)
+    {
+        inputs.add(nn);
+    }
+
+
+
     /**
      * Method to calculate this node's output. -- NEED TO FINISH.
      */

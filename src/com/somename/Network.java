@@ -152,6 +152,9 @@ public class Network
                          */
 
                         hiddenLayers.get(0).myNodes.get(j).inputs.add(inputLayer.myNodes.get(jj));
+
+                        //hiddenLayers.get(0).myNodes.get(j).a
+
                     }
 
                 }
