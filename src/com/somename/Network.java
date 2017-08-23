@@ -35,11 +35,19 @@ public class Network
 
     public Network(int numInputNodes, int numHiddenNodes, int numOutputNodes)
     {
+        //1. Populate arraylist of hidden layers with NN_Layers.
+        //2. Populate the input, hidden, and output layers with Neural_Nodes.
+        //3. Connect all the layers.
+
+
         totalLayers = 3;
         numHiddenLayers = 1;
 
         inputLayer = new NN_Layer(numInputNodes);
         outputLayer = new NN_Layer(numOutputNodes);
+
+        //1.
+        // First populate the Arraylist of hidden layers with the correct number of hidden layers.
 
         for (int i = 0; i < numHiddenLayers; i++)
         {
@@ -56,11 +64,42 @@ public class Network
         }
 
 
+        //2.
+
+        //Input layer:
+        for (int a = 0; a < numInputNodes; a++)
+        {
+            // NOTE: dummy value to start with.
+            /** each neural_node's "inputlist" variable will later be set during the "connections" phase. */
+            inputLayer.myNodes.add(a, new Neural_Node(null));
+        }
+
+        //Output layer:
+        for (int b = 0; b < numOutputNodes; b++)
+        {
+            /** each neural_node's "inputlist" variable will later be set during the "connections" phase. */
+            outputLayer.myNodes.add(b, new Neural_Node(null));
+        }
+
+        //Hidden layer: in this constructor, we assume there is ONE hidden layer.
+        for (int c = 0; c < numHiddenNodes; c++)
+        {
+            /** each neural_node's "inputlist" variable will later be set during the "connections" phase. */
+            hiddenLayers.get(0).myNodes.add(c, new Neural_Node(null));
+        }
+
+
+        //3.
+
         // Connect all the nodes together. Make sure the inputs of the input layers point to the right nodes, etc...
         connect();
 
 
-        // Anything else to do in this Network() constructor?
+
+
+
+
+        // ...Anything else to do in this Network() constructor?
 
 
     }
@@ -96,6 +135,11 @@ public class Network
             if (i == 0)
             {
                 //If we're on the first connection-layer, i.e. between input and hidden layer 1, then connect those.
+
+                for (int j = 0; j < hiddenLayers.get(i).myNodes.size(); j++ )
+                {
+
+                }
 
 
             }
