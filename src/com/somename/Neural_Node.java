@@ -76,7 +76,7 @@ public class Neural_Node
 
 
     /**
-     * Method to calculate this node's output.
+     * Method to calculate this node's output. -- NEED TO FINISH.
      */
     public void calculateOutput()
     {

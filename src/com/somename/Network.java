@@ -57,6 +57,10 @@ public class Network
 
 
         // Connect all the nodes together. Make sure the inputs of the input layers point to the right nodes, etc...
+        connect();
+
+
+        // Anything else to do in this Network() constructor?
 
 
     }
@@ -71,6 +75,7 @@ public class Network
      */
     public void connect()
     {
+
 
     }
 
