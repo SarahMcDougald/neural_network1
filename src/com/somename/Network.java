@@ -92,7 +92,7 @@ public class Network
         //3.
 
         // Connect all the nodes together. Make sure the inputs of the input layers point to the right nodes, etc...
-        connect();
+        connectOneHidden();
 
 
 
@@ -117,7 +117,7 @@ public class Network
      * This will be "version 1" in which there is assumed to be *ONE* hidden layer.
      *
      */
-    public void connect()
+    public void connectOneHidden()
     {
         // First, connect between input layer and hidden layer 1.
 
