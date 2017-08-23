@@ -16,31 +16,23 @@ import java.lang.Math;
 public class Neural_Node
 {
     //  1. inputs
-    public ArrayList<Neural_Node> inputs = new ArrayList<Neural_Node>();
-
     //  2. weights
     //ARRAYLIST of doubles. A little different. https://stackoverflow.com/questions/17481206/java-arraylist-of-doubles
-    public ArrayList<Double> weights; // = new ArrayList<Double>();
+    // = new ArrayList<Double>();
     //List<Double> list = new ArrayList<>(Arrays.asList(1.38, 2.56, 4.3));
-
-
-
     //  3. activation function
-    ///Make another class with the activaton function? Specify that this neural node has that activation function.
-    ///(DECIDE ON STRUCTURE)
-    public ActivationFunction_Listing myFunction;
-
-
+    ///Make an instance of ActivationFunction class. Might as well have all activation functions available at once for a node.
+    //(Layers with nodes that each have different activation functions is possible with this structure. May be either useful
+    //or entirely superfluous.)
+    //--NOTE: The activation function class is basically a helper class.
     //  4. output
+
+
+    public ArrayList<Neural_Node> inputs = new ArrayList<Neural_Node>();
+    public ArrayList<Double> weights;
+    public ActivationFunction_Listing myFunction;
     public double output;
 
-
-
-
-    /*
-
-    What methods? What should each node be able to do?
-     */
 
     /**
      * Constructor for a neural node.
@@ -52,14 +44,30 @@ public class Neural_Node
      */
     public Neural_Node(ArrayList<Neural_Node> inputList)
     {
-        //Output is always 0 to start.
-        output = 0;
 
-        //Make an interface for using activation function.
+        inputs = inputList;
+
+        int numWeights = inputList.size();
+        weights = new ArrayList<Double>();
+        for (int i = 0; i < numWeights; i++)
+        {
+            //Add a weight to the "weights" arraylist, as many as there are inputs.
+
+            /**
+             weights must be SET RANDOMLY. For now: DUMMY VARIABLE, 1.0, instead of random double.
+             Basically find a good randomization function. Not sure what to use. Math.rand()?
+             */
+            weights.add(new Double(1.0));
+
+        }
+
+
+
+
         myFunction = new ActivationFunction_Listing();
 
-        //Make an arraylist of weights.
-        // -- weights between -1 and 1? -10 and 10?
+        //Output is always 0 to start.
+        output = 0;
 
 
 
