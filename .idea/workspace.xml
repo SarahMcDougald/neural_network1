@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0525418-7146-4fc4-8e5a-1382dbe4587b" name="Default" comment="" />
+    <list default="true" id="c0525418-7146-4fc4-8e5a-1382dbe4587b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/somename/Neural_Node.java" afterPath="$PROJECT_DIR$/src/com/somename/Neural_Node.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,12 +21,13 @@
       <file leaf-file-name="Neural_Node.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/somename/Neural_Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="109" column="5" lean-forward="true" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
+            <state relative-caret-position="562">
+              <caret line="113" column="0" lean-forward="true" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2847#2848#0" expanded="true" />
                 <element signature="e#2885#2886#0" expanded="true" />
+                <element signature="e#3148#3149#0" expanded="true" />
                 <element signature="e#3178#3179#0" expanded="true" />
               </folding>
             </state>
@@ -410,6 +413,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2847#2848#0" expanded="true" />
             <element signature="e#2885#2886#0" expanded="true" />
+            <element signature="e#3148#3149#0" expanded="true" />
             <element signature="e#3178#3179#0" expanded="true" />
           </folding>
         </state>
@@ -439,6 +443,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2847#2848#0" expanded="true" />
             <element signature="e#2885#2886#0" expanded="true" />
+            <element signature="e#3148#3149#0" expanded="true" />
             <element signature="e#3178#3179#0" expanded="true" />
           </folding>
         </state>
@@ -468,6 +473,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2847#2848#0" expanded="true" />
             <element signature="e#2885#2886#0" expanded="true" />
+            <element signature="e#3148#3149#0" expanded="true" />
             <element signature="e#3178#3179#0" expanded="true" />
           </folding>
         </state>
@@ -497,6 +503,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2847#2848#0" expanded="true" />
             <element signature="e#2885#2886#0" expanded="true" />
+            <element signature="e#3148#3149#0" expanded="true" />
             <element signature="e#3178#3179#0" expanded="true" />
           </folding>
         </state>
@@ -534,6 +541,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2847#2848#0" expanded="true" />
             <element signature="e#2885#2886#0" expanded="true" />
+            <element signature="e#3148#3149#0" expanded="true" />
             <element signature="e#3178#3179#0" expanded="true" />
           </folding>
         </state>
@@ -563,6 +571,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2847#2848#0" expanded="true" />
             <element signature="e#2885#2886#0" expanded="true" />
+            <element signature="e#3148#3149#0" expanded="true" />
             <element signature="e#3178#3179#0" expanded="true" />
           </folding>
         </state>
@@ -592,6 +601,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2847#2848#0" expanded="true" />
             <element signature="e#2885#2886#0" expanded="true" />
+            <element signature="e#3148#3149#0" expanded="true" />
             <element signature="e#3178#3179#0" expanded="true" />
           </folding>
         </state>
@@ -639,12 +649,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/somename/Neural_Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="109" column="5" lean-forward="true" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
+        <state relative-caret-position="562">
+          <caret line="113" column="0" lean-forward="true" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2847#2848#0" expanded="true" />
             <element signature="e#2885#2886#0" expanded="true" />
+            <element signature="e#3148#3149#0" expanded="true" />
             <element signature="e#3178#3179#0" expanded="true" />
           </folding>
         </state>

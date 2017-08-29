@@ -113,21 +113,6 @@ public class Neural_Node
 
 
 
-    /**
-     * Method to calculate this node's rawValue. -- NEED TO FINISH.
-     */
-    public void calculaterawValue()
-    {
-
-        for (int i = 0; i < inputs.size(); i++)
-        {
-            rawValue += inputs.get(i).getrawValue();
-            //// DOES THIS MAKE SENSE ? ? ? ? ? ?  ? ? ? ? ?  ? ? ? ? ? ? ?
-
-        }
-
-    }
-
     public double getrawValue()
     {
         return rawValue;
