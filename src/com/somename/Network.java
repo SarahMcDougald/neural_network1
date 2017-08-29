@@ -222,6 +222,9 @@ public class Network
     public void feedForward()
     {
 
+
+
+
     }
 
     public void backPropagate()

@@ -25,20 +25,30 @@ public class Neural_Node
     //(Layers with nodes that each have different activation functions is possible with this structure. May be either useful
     //or entirely superfluous.)
     //--NOTE: The activation function class is basically a helper class.
-    //  4. output
+    //  4. rawValue
 
 
     public ArrayList<Neural_Node> inputs = new ArrayList<Neural_Node>();
     public ArrayList<Double> weights;
     public ActivationFunction_Listing myFunction;
-    public double output;
+
+    //Changed name from 'output' to 'rawValue'.
+    //This better reflects the STRUCTURE of the neural node, since a neural node does NOT always keep the same weight!!!!
+    /**
+     * KEY IDEA: different CONNECTIONS have different weights.
+     * See diagram here: https://i.stack.imgur.com/VqOpE.jpg
+     *
+     */
+    public double rawValue;
+
+    public double weightedValue;
 
 
     /**
      * Constructor for a neural node.
-     * Need to specify its inputs (arraylist), weights (arraylist? ? of doubles), AND activation function (???), and output.
+     * Need to specify its inputs (arraylist), weights (arraylist? ? of doubles), AND activation function (???), and rawValue.
      *
-     * /// Wait..... you shouldn't have to specify the output.
+     * /// Wait..... you shouldn't have to specify the rawValue.
      * /// Wait.... weights should be set randomly, not specified.
      *
      */
@@ -66,12 +76,27 @@ public class Neural_Node
 
         myFunction = new ActivationFunction_Listing();
 
-        //Output is always 0 to start.
-        output = 0;
+        /**
+         * NEED TO INITIALiZE RAW VALUE!!!
+         */
+        rawValue = 0;
+
+        //Weighted value starts at 0.
+        // NOTE!!! For neural nodes in the input layer, this value should never change.
+        weightedValue = 0;
 
 
 
 
+    }
+
+    /**
+     *
+     * @param newVal the new weighted value
+     */
+    public void setWeightedValue(double newVal)
+    {
+        weightedValue = newVal;
     }
 
 
@@ -89,23 +114,23 @@ public class Neural_Node
 
 
     /**
-     * Method to calculate this node's output. -- NEED TO FINISH.
+     * Method to calculate this node's rawValue. -- NEED TO FINISH.
      */
-    public void calculateOutput()
+    public void calculaterawValue()
     {
 
         for (int i = 0; i < inputs.size(); i++)
         {
-            output += inputs.get(i).getOutput();
+            rawValue += inputs.get(i).getrawValue();
             //// DOES THIS MAKE SENSE ? ? ? ? ? ?  ? ? ? ? ?  ? ? ? ? ? ? ?
 
         }
 
     }
 
-    public double getOutput()
+    public double getrawValue()
     {
-        return output;
+        return rawValue;
     }
 
 
